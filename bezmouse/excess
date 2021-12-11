@@ -1,0 +1,11 @@
+        time.sleep(2)
+        buytimedestination = makeBuyTime(to)
+        buytime = mouse.connected_bez([to, buytimedestination], 62, 1)
+        for b in buytime:
+            mouse.move(b)
+        buytimeback = mouse.connected_bez([buytimedestination, to], 62, 1)
+        for b in buytimeback:
+            mouse.move(b)
+        time.sleep(2)
+
+        
